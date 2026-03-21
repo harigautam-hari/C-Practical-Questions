@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+	int a,b;
+	printf("Enter your first value :- ");
+	scanf("%d",&a);
+	printf("Enter your second value :- ");
+	scanf("%d",&b);
+	if(a>b){
+		printf("%d is Largest Value",a);
+	}
+	else if(b>a){
+		printf("%d is Largest Value",b);
+	}
+	else{
+		printf("Both Values are Same");
+	}
+	return 0;
+}
