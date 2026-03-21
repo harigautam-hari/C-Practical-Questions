@@ -1,0 +1,90 @@
+#include<stdio.h>
+int volume = 50;
+int power = 1;
+int channel = 50;
+int volumeup();
+int volumedown();
+int poweroff();
+int channelup();
+int channeldown();
+int mute();
+int unmute();
+int numberinput();
+
+
+int main(){
+    int c;
+    printf("1 for Volumeup\n");
+    printf("2 for Volumedown\n");
+    printf("3 for Poweroff\n");
+    printf("4 for Channelup\n");
+    printf("5 for Channeldown\n");
+    printf("6 for Mute\n");
+    printf("7 for Unmute\n");
+    printf("8 for numberinput\n");
+    printf("Enter which button do you want to use :- ");
+    scanf("%d",&c);
+    switch(c){
+        case 1: volumeup(); break;
+        case 2: volumedown(); break;
+        case 3: poweroff(); break;
+        case 4: channelup(); break;
+        case 5: channeldown(); break;
+        case 6: mute(); break;
+        case 7: unmute(); break;
+        case 8: numberinput(); break;
+        default: printf("Wrong Input");
+        
+    }
+}
+int volumedown(){
+    volume = volume-1;
+    printf("Volume = %d\n",volume);
+    return volume;
+}
+int volumeup(){
+    volume = volume+1;
+    printf("Volume = %d\n",volume);
+    return volume;
+}
+int poweroff(){
+    int power;
+    printf("Enter 0 for off or 1 for on :- ");
+    scanf("%d",&power);
+    if(power == 0){
+        printf("Your T.V is off\n");
+    }
+    else if(power == 1){
+        printf("\nYour T.V is on\n");
+    }
+    else
+        printf("\nWrong Input\n");
+}
+int channeldown(){
+    channel = channel-1;
+    printf("You are currently on = %d\n",channel);
+    return channel;
+}
+int channelup(){
+    channel = channel+1;
+    printf("You are currently on = %d\n",channel);
+    return channel;
+}
+int mute(){
+    volume = 0;
+    printf("Muted, Volume = %d\n", volume);
+    return volume;
+}
+int unmute(){
+    volume  = 50;
+    printf("Unmuted, Volume = %d\n", volume);
+    return volume;
+}
+int numberinput(){
+    int input;
+    printf("On which channel you want to go :- ");
+    scanf("%d",&input);
+    printf("You are currently on %d\n", input);
+    channel = input;
+    return channel;
+}
