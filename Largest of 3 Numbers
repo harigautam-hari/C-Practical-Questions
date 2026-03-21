@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int a,b,c,max;
+	printf("Enter your first value :- ");
+	scanf("%d",&a);
+	printf("Enter your second value :- ");
+	scanf("%d",&b);
+	printf("Enter your third value :- ");
+	scanf("%d",&c);
+	max = a;
+	if(b>max){
+		max = b;
+	}
+	else if(c>max){
+		max = c;
+	}
+	printf("%d is the greatest", max);
+	return 0;
+}
