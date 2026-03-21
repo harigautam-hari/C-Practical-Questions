@@ -45,9 +45,9 @@
 
 ### 📫 Connect with me
 
-* 💼 LinkedIn: your-link
-* 📧 Email: [your-email@gmail.com](mailto:your-email@gmail.com)
+* 💼 LinkedIn: https://www.linkedin.com/in/hari-gautam-ab09633b8/
+* 📧 Email: harigautamagra@gmail.com
 
 ---
 
-⭐ From [YOUR_NAME](https://github.com/YOUR_USERNAME)
+⭐ From Hari Gautam
