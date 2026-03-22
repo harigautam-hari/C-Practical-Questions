@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n,p,ans = 1;
+    printf("Enter a Number :- ");
+    scanf("%d",&n);
+    printf("Enter it's power :- ");
+    scanf("%d",&p);
+    for(int i = 1; i<=p; i++){
+        ans = n * ans;
+    }
+    printf("Answer :- %d", ans);
+    return 0;
+}
