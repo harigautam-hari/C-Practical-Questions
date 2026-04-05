@@ -1,0 +1,19 @@
+#include<stdio.h>
+void sum(int n);
+int main(){
+	int n;
+	printf("Enter your number :- ");
+	scanf("%d",&n);
+	sum(n);
+}
+
+void sum(int n){
+	int a,b,c = 0;
+	while( n!= 0){
+		a = n%10;
+		n = n/10;
+		c = c + a;
+	}
+	
+	printf("Sum = %d",c);
+}
