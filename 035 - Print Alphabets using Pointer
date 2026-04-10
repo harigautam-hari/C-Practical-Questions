@@ -1,0 +1,16 @@
+#include<stdio.h>
+void print();
+
+int main(){
+	print();
+	return 0;
+}
+
+void print(){
+	int i,a = 'A';
+	int *ptr = &a;
+	for(i = 0; i<26; i++){
+		printf("%c\t",*ptr);
+		a++;
+	}
+}
