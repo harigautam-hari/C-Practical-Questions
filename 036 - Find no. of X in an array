@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+	int i,count = 0;
+	int n;
+	printf("How many variables do you want :- ");
+	scanf("%d",&n);
+	char arr[n];
+	for(i = 0; i<n; i++){
+		printf("Enter your elements :- ");
+		scanf(" %c",&arr[i]);	
+	}
+	for(i = 0; i<n; i++){
+		if(arr[i] == 'x'){
+			count++;
+			
+		}
+	}
+	printf("Count = %d",count);
+	return 0;
+}
