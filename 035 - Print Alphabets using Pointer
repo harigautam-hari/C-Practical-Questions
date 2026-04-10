@@ -11,6 +11,6 @@ void print(){
 	int *ptr = &a;
 	for(i = 0; i<26; i++){
 		printf("%c\t",*ptr);
-		a++;
+		(*ptr)++;
 	}
 }
