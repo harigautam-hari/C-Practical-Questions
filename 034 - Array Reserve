@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+	int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+	int i,j,first,second;
+	for( i = 0; i<10; i++){
+		for(j = 10-i-1; j > i; j++){
+			first = arr[i];
+			second = arr[j];
+			arr[i] = second;
+			arr[j] = first;
+			break;
+		}
+	}
+	for( i = 0; i<10; i++){
+		printf("%d\t",arr[i]);
+	}
+	return 0;
+}
